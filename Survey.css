@@ -1,0 +1,182 @@
+/* DEFAULT CSS BEGIN */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+width: 100%;
+height: 100%;
+
+font-family: Poppins, sans-serif;
+/* Available font weights to use 
+LIGHT 300   
+LIGHT ITALIC 300
+MEDIUM 500
+MEDIUM ITALIC 500
+BLACK 900
+*/
+
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 35pt;
+    font-weight: 500;
+    color: white;
+    text-shadow: 2px 2px 8px #A9A9A9;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    color: white;
+}
+
+label {
+    font-family: Poppins, sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    margin-top: 5pt;
+    margin-bottom: 3pt;
+}
+
+input,
+select,
+textarea {
+    font-family: Poppins, sans-serif, ;
+    font-size: 9pt;
+    font-weight: 300;
+
+    color: gray;
+    padding: 6px;
+    border-radius: 3px;
+    border-style: none;
+}
+
+::placeholder {
+    font-family: Poppins, sans-serif;
+    font-size: 9pt;
+    color: gray;
+}
+
+button {
+    padding: 8px;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.submit-button {
+    background-color: seagreen;
+    color: white;;
+}
+
+p.sub-heading {
+    font-style: italic;
+}
+/* DEFAULT CSS END */
+
+/* BODY CSS BEGIN */
+body{
+background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),url("https://cdn.aarp.net/content/dam/aarp/work/job_hunting/2016/11/1140-great-tech-jobs-for-50-plus.imgcache.rev0375da5addd1876a528703ddf01ca1e7.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+/* BODY CSS END */
+
+
+/* HERO CSS BEGIN */
+div#hero {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+div#hero-overlay {
+    position: absolute;
+    z-index: 2;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ 
+}
+
+div#hero-contents {
+    position: relative;
+    z-index: 10;
+
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* HERO CSS END */
+
+/* FORM CONTAINER CSS BEGIN */
+section#form-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 10px, 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    section#form-container {
+        width: 85%;
+    }
+  }
+/* FORM CONTAINER CSS END */
+
+/* FORM CONTAINER CSS BEGIN */
+div.input-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    margin: 15px 0;
+}
+
+div.inline-elements {
+    display: inline;
+}
+/* FORM CONTAINER CSS END */
+
+/* HEADER CSS BEGIN */
+header#form-header {
+    text-align: center;
+    margin: 15px 0px;
+}
+/* HEADER CSS END */
+
+/* FROM CONTAINER CSS BEGIN */
+section#form-container {
+    padding: 15px 30px;
+    border-radius: 5px;
+    opacity: 0.75;
+    background:rgba(57,62,70, 0.9); 
+    color: white;
+}
+
+section#form-container > form{
+    width: 100%;
+}
+/* FROM CONTAINER CSS END */

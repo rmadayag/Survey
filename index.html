@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Survey.css">
+    <title>Survey Form</title>
+    <!--web-icon------------------->
+    <link href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq4I1hh3qIm6qBvbCoSB9WoyYyiJwXa1UJsQ&usqp=CAU" rel="shortcut icon"/>
+    <!-- FONT LINKING -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,300;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="hero">
+        <div id="hero-overlay"></div>
+        <div id="hero-contents">
+            <header id="form-header">
+                <h1 id="title">Software Developer Survey Form</h1>
+                <p id="description" class="sub-heading">I would love to hear your opinions about the site and do my best to improve it</p>
+             </header>
+            <section id="form-container">
+                <form id="survey-form" action="" method="post">
+                    <!-- name -->
+                    <div class="input-container">
+                        <label for="name" id="name-label">Name*</label>
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </div>
+                    <!-- email -->
+                    <div class="input-container">
+                        <label for="email" id="email-label">Email*</label>
+                        <input id="email" type="email" placeholder="Enter your email" required>   
+                    </div>
+                    <!-- age -->
+                    <div class="input-container">
+                        <label for="number" id="number-label">Age (optional)</label>
+                        <input id="number" type="number" min="15" max="125" placeholder="Enter your age">    
+                    </div>
+                    <!-- role -->
+                    <div class="input-container">
+                        <label for="dropdown">Which option best describes your current role?</label>
+                        <select name="input-role" id="dropdown">
+                            <option value="none" selected disabled hidden>Select Current Role</option>
+                            <option value="quality analyst">Quality Analyst</option>
+                            <option value="developer">Developer</option>
+                            <option value="not_to_say">Prefer Not To Say</option>
+                            <option value="other">Others</option>
+                        </select>    
+                    </div>
+                    <!-- radiobox -->
+                    <div class="input-container">
+                        <label for="">Would you recommend my work to others?</label>
+                            <div class="inline-elements">
+                                <input type="radio" name="reccommendation" value="definitely">
+                                <label for="definitely">Definitely</label>
+                            </div>
+                            <div class="inline-elements">
+                                <input type="radio" name="reccommendation" value="maybe">
+                                <label for="maybe">Maybe</label>    
+                            </div>
+                            <div class="inline-elements">
+                                <input type="radio" name="reccommendation" value="not-sure">
+                                <label for="not-sure">Not Sure</label>
+                            </div>
+                            <div class="inline-elements"></div>
+                    </div>
+                    <!-- feature-selection -->
+                    <div class="input-container">
+                        <label for="input-feature">Which is your favorite project?</label>
+                        <select name="input-feature" id="input-feature">
+                            <option value="none" selected disabled hidden>Select project</option>
+                            <option value="challenges">Tribute Page</option>
+                            <option value="projects">Survey Form</option>
+                            <option value="community">Personal Portfolio</option>
+                            <option value="open_source">Product Landing Page</option>
+                             <option value="open_source">Technical Documentation Page</option>
+                        </select>               
+                    </div>
+                    <!-- improvement-section -->
+                    <div class="input-container">
+                        <label for="">What would you like to see improved? (Check all that apply)</label>
+                        <div class="inline-elements">
+                            <input type="checkbox" id="front-end-projects" value="front-end"> 
+                            <label for="front-end-projects">Front-end projects</label>
+                        </div>
+                        <div class="inline-elements">
+                            <input type="checkbox" id="back-end-projects" value="back-end">
+                            <label for="back-end-projects">Back-end projects</label>
+                        </div>
+                        <div class="inline-elements">
+                            <input type="checkbox" id="data-vis" value="data-vis">
+                            <label for="data-vis">Data Visualization</label>
+                            </div>
+                        <div class="inline-elements">
+                            <input type="checkbox" id="challenges" value="challenges">
+                            <label for="challenges">Machine Learning and AI</label>
+                        </div>
+                        <div class="inline-elements">
+                            <input type="checkbox" id="open-source-community" value="open-source-community">
+                            <label for="open-source-community">Network and Security</label>
+                        </div>
+                    </div>  
+                    <!-- comments&suggestions -->
+                    <div class="input-container">
+                        <label for="comments/suggestions">Any comments or suggestions?</label>
+                        <textarea rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+                    </div>  
+                    <!-- submit button -->
+                    <button id="submit" form="survey-form" value="Submit" class="submit-button">submit</button>
+                </form>
+            </section>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
